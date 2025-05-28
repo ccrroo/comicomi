@@ -5,7 +5,7 @@ import cv2
 model = YOLO("yolov8n.pt")
 
 # カメラを開く（0 = PCの内蔵カメラ）
-cap = cv2.VideoCapture(1)  # or 動画ファイル: cv2.VideoCapture("video.mp4")
+cap = cv2.VideoCapture(0)  # or 動画ファイル: cv2.VideoCapture("video.mp4")
 
 while True:
     ret, frame = cap.read()
